@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — The Bucking Barrel | Perkins, OK</title>
+  <meta name="description" content="See upcoming events at The Bucking Barrel — rodeos, jackpots, speed dating nights, seasonal markets, and more in Perkins, Oklahoma." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="The Bucking Barrel Home">
+        <img src="BuckingBarrelLogo.png" alt="The Bucking Barrel" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="space.html">The Space</a>
+        <a href="book.html">Check Availability</a>
+        <a href="https://maps.google.com/?q=7315+W+116th+St+Perkins+OK" target="_blank" rel="noopener noreferrer" class="nav-map-link">Directions</a>
+      </div>
+      <a href="book.html" class="btn btn-orange nav-cta">Book Now</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="space.html">The Space</a>
+    <a href="book.html">Check Availability</a>
+    <a href="book.html" class="btn btn-orange">Book Now</a>
+  </div>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section class="page-hero-photo" style="background-image: url('Photos/venue-4.jpg');">
+    <div class="container">
+      <h1 data-aos="fade-up">Events Calendar</h1>
+      <p data-aos="fade-up" data-aos-delay="120">Rodeos. Social nights. Seasonal markets. Private events. There's always something going on at the Barrel.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FILTER BAR ═══ -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-pills">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="rodeo">Rodeos</button>
+        <button class="filter-btn" data-filter="private">Private Events</button>
+        <button class="filter-btn" data-filter="social">Social Nights</button>
+        <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ EVENT CARDS ═══ -->
+  <section class="section" style="padding-top:60px; padding-bottom:100px;">
+    <div class="container">
+
+      <div class="event-grid">
+
+        <div class="event-card" data-category="rodeo" data-aos="fade-up" data-aos-delay="0">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUN</span>
+              <span class="event-card-day">7</span>
+            </div>
+            <span class="event-card-cat">Rodeo</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">Opening Night Jackpot Rodeo</h3>
+            <p class="event-card-time">Saturday &middot; 6:00 PM</p>
+          </div>
+          <div class="event-card-foot">
+            <a href="book.html" class="btn btn-sm btn-orange">Tickets</a>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>The first big night at the Barrel. Barrel racing, team roping, and more. Come early, stay late.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-category="social" data-aos="fade-up" data-aos-delay="60">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUN</span>
+              <span class="event-card-day">14</span>
+            </div>
+            <span class="event-card-cat">Social</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">Speed Dating Night</h3>
+            <p class="event-card-time">Saturday &middot; 7:00 PM</p>
+          </div>
+          <div class="event-card-foot">
+            <a href="book.html" class="btn btn-sm btn-orange">Register</a>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>Our signature social event. Good drinks, good vibes, and who knows &mdash; maybe someone worth keeping around.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-category="private" data-aos="fade-up" data-aos-delay="120">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUN</span>
+              <span class="event-card-day">21</span>
+            </div>
+            <span class="event-card-cat">Private</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">Private Wedding Reception</h3>
+            <p class="event-card-time">Saturday &middot; 5:00 PM</p>
+          </div>
+          <div class="event-card-foot">
+            <span class="event-card-private-tag">Private Event</span>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>Venue reserved for a private event. Want to book yours? We'd love to host.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-category="rodeo" data-aos="fade-up" data-aos-delay="180">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUN</span>
+              <span class="event-card-day">28</span>
+            </div>
+            <span class="event-card-cat">Rodeo</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">Saturday Night Barrel Racing</h3>
+            <p class="event-card-time">Saturday &middot; 5:30 PM</p>
+          </div>
+          <div class="event-card-foot">
+            <a href="book.html" class="btn btn-sm btn-orange">Tickets</a>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>Weekly barrel racing open to all skill levels. Sign up at the gate or call ahead to reserve a spot.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-category="rodeo" data-aos="fade-up" data-aos-delay="0">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUL</span>
+              <span class="event-card-day">4</span>
+            </div>
+            <span class="event-card-cat">Rodeo</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">4th of July Barrel Racing Classic</h3>
+            <p class="event-card-time">Friday &middot; 5:00 PM</p>
+          </div>
+          <div class="event-card-foot">
+            <a href="book.html" class="btn btn-sm btn-orange">Tickets</a>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>Celebrate Independence Day Barrel-style. Live music, food, fireworks, and fast times on the dirt.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-category="social" data-aos="fade-up" data-aos-delay="60">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUL</span>
+              <span class="event-card-day">12</span>
+            </div>
+            <span class="event-card-cat">Social</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">Speed Dating Night</h3>
+            <p class="event-card-time">Saturday &middot; 7:00 PM</p>
+          </div>
+          <div class="event-card-foot">
+            <a href="book.html" class="btn btn-sm btn-orange">Register</a>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>Monthly speed dating returns. Full bar, great crowd, zero pressure.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-category="seasonal" data-aos="fade-up" data-aos-delay="120">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUL</span>
+              <span class="event-card-day">19</span>
+            </div>
+            <span class="event-card-cat">Market</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">Summer Maker's Market</h3>
+            <p class="event-card-time">Saturday &middot; 10:00 AM</p>
+          </div>
+          <div class="event-card-foot">
+            <a href="book.html" class="btn btn-sm btn-orange">Info</a>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>Local vendors, handmade goods, food pop-ups, and live music. A summer Saturday done right.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-category="rodeo" data-aos="fade-up" data-aos-delay="180">
+          <div class="event-card-top">
+            <div class="event-card-date">
+              <span class="event-card-month">JUL</span>
+              <span class="event-card-day">26</span>
+            </div>
+            <span class="event-card-cat">Rodeo</span>
+          </div>
+          <div class="event-card-mid">
+            <h3 class="event-card-name">Saturday Night Barrel Racing</h3>
+            <p class="event-card-time">Saturday &middot; 5:30 PM</p>
+          </div>
+          <div class="event-card-foot">
+            <a href="book.html" class="btn btn-sm btn-orange">Tickets</a>
+            <button class="event-card-toggle" aria-expanded="false">Details <span class="event-card-toggle-icon">&#8595;</span></button>
+          </div>
+          <div class="event-card-expand">
+            <p>Weekly barrel racing. Open to all. Come ride.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No-match message (hidden by default) -->
+      <div class="events-empty" style="display:none;">
+        <p>No events found for that category. <a href="book.html">Want to host one?</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta-bar">
+    <div class="container">
+      <div class="cta-bar-inner">
+        <div>
+          <div class="cta-bar-heading">Want to Host Your Own Event?</div>
+          <div class="cta-bar-sub">Weddings, formals, rodeos, banquets &mdash; we do it all. Let's talk.</div>
+        </div>
+        <a href="book.html" class="btn btn-orange">Book The Venue</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="BuckingBarrelLogo.png" alt="The Bucking Barrel" class="footer-logo" />
+          <p>A family-owned event center and rodeo arena in the heart of central Oklahoma. Built for the community. Open for everyone.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/thebuckinbarrell" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">IG</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="space.html">The Space</a></li>
+            <li><a href="book.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <address>
+            <p>7315 W 116 St<br>Perkins, Oklahoma</p>
+            <p><a href="mailto:thebuckinbarrell@gmail.com">thebuckinbarrell@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h5>Hours</h5>
+          <p>Thursday &ndash; Sunday<br>4:00 PM &ndash; 9:00 PM</p>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-style:italic; margin-top:12px;">Opening Summer 2026</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-btm-copy">&copy; 2025 The Bucking Barrel LLC. All rights reserved.</span>
+        <span class="footer-btm-addr">7315 W 116 St, Perkins, OK &middot; <a href="mailto:thebuckinbarrell@gmail.com">thebuckinbarrell@gmail.com</a></span>
+        <span class="footer-btm-credit">Website by <a href="https://novabuildweb.com" target="_blank" rel="noopener noreferrer">NovaBuild</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ STICKY MOBILE CTA BAR ═══ -->
+  <div class="mobile-cta-bar" aria-label="Quick contact">
+    <div class="mobile-cta-bar-inner">
+      <a href="tel:+14053346654" class="mcta-btn mcta-call">Call</a>
+      <a href="sms:+14053346654?body=Hi%2C%20I%27m%20interested%20in%20booking%20The%20Buckin%27%20Barrel%20for%20an%20event.%20Can%20you%20help%20me%20with%20availability%3F" class="mcta-btn mcta-text">Text Us</a>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({ duration: 650, easing: 'ease-out-quart', once: true, offset: 80 });
+  </script>
+</body>
+</html>

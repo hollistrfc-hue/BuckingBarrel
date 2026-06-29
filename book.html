@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Event — The Bucking Barrel | Perkins, OK</title>
+  <meta name="description" content="Book The Bucking Barrel for your event — weddings, birthday parties, frat formals, rodeos, team banquets, and more in Perkins, Oklahoma." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="The Bucking Barrel Home">
+        <img src="BuckingBarrelLogo.png" alt="The Bucking Barrel" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="space.html">The Space</a>
+        <a href="book.html" class="active">Check Availability</a>
+        <a href="https://maps.google.com/?q=7315+W+116th+St+Perkins+OK" target="_blank" rel="noopener noreferrer" class="nav-map-link">Directions</a>
+      </div>
+      <a href="book.html" class="btn btn-orange nav-cta active">Book Now</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="space.html">The Space</a>
+    <a href="book.html">Check Availability</a>
+    <a href="book.html" class="btn btn-orange">Book Now</a>
+  </div>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section class="page-hero-photo" style="background-image: url('Photos/venue-7.jpg');">
+    <div class="container">
+      <h1>Let's Make It Happen</h1>
+      <p>Have a quick question or ready to lock in a date? Use whichever form fits where you're at.</p>
+    </div>
+  </section>
+
+  <!-- ═══ AVAILABILITY CALENDAR ═══ -->
+  <section class="section cal-section" id="availability" style="padding-top:72px; padding-bottom:72px;">
+    <div class="container" style="max-width:860px;">
+
+      <div class="section-heading fade-up">
+        <span class="section-label">Availability</span>
+        <h2>Check Your Date</h2>
+        <p>Booked dates are marked in red. Tap any open date to pre-fill your booking request below.</p>
+      </div>
+
+      <div class="cal-wrap fade-up delay-1">
+
+        <div class="cal-header">
+          <button class="cal-nav cal-prev" aria-label="Previous month">&#8592;</button>
+          <span class="cal-month-label"></span>
+          <button class="cal-nav cal-next" aria-label="Next month">&#8594;</button>
+        </div>
+
+        <div class="cal-day-headers">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+
+        <div class="cal-days" id="calDays"></div>
+
+        <div class="cal-legend">
+          <span class="cal-legend-item"><span class="cal-legend-dot cal-dot-available"></span> Available</span>
+          <span class="cal-legend-item"><span class="cal-legend-dot cal-dot-booked"></span> Booked</span>
+          <span class="cal-legend-item"><span class="cal-legend-dot cal-dot-today"></span> Today</span>
+          <span class="cal-legend-item"><span class="cal-legend-dot cal-dot-selected"></span> Selected</span>
+        </div>
+
+      </div>
+
+      <p class="cal-note fade-up delay-2">Not seeing what you need? <a href="tel:+14053346654" style="color:var(--orange);">Call or text us</a> — she may have flexibility not shown here.</p>
+
+    </div>
+  </section>
+
+  <!-- ═══ QUICK INQUIRY ═══ -->
+  <section class="section" style="padding-top:80px; padding-bottom:60px;">
+    <div class="container" style="max-width:720px;">
+      <div class="form-section-heading fade-up">
+        <span class="section-label">Just Getting Started?</span>
+        <h2>Send Us a Quick Note</h2>
+        <p>Not ready to fill out the full form yet &mdash; no problem. Ask us anything. We're real people and we respond fast.</p>
+      </div>
+
+      <div class="form-wrap fade-up delay-1">
+        <div class="form-wrap-title">Quick Inquiry</div>
+        <div class="form-wrap-sub">Drop us a message and we'll get back to you within one business day.</div>
+
+        <form action="mailto:thebuckinbarrell@gmail.com" method="post" enctype="text/plain" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="q_name">Your Name</label>
+              <input type="text" id="q_name" name="name" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label for="q_phone">Phone (optional)</label>
+              <input type="tel" id="q_phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group full">
+              <label for="q_email">Email Address</label>
+              <input type="email" id="q_email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group full">
+              <label for="q_message">Your Message</label>
+              <textarea id="q_message" name="message" placeholder="Ask us anything — availability, pricing, kitchen rental, what the space looks like for your type of event..." required></textarea>
+            </div>
+            <div class="form-group full form-submit">
+              <button type="submit" class="btn btn-orange">Send Message &#8594;</button>
+            </div>
+          </div>
+        </form>
+          <div class="direct-contact-wrap">
+            <div class="direct-contact-label">or reach us directly</div>
+            <div class="direct-contact-btns">
+              <a href="tel:+14053346654" class="btn btn-outline-orange">Call Us</a>
+              <a href="sms:+14053346654?body=Hi%2C%20I%27m%20interested%20in%20booking%20The%20Buckin%27%20Barrel%20for%20an%20event.%20Can%20you%20help%20me%20with%20availability%3F" class="btn btn-ghost">Text Us</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DETAILED BOOKING ═══ -->
+  <section class="section" id="booking" style="background:var(--bg-alt); padding-top:80px; padding-bottom:80px;">
+    <div class="container" style="max-width:860px;">
+      <div class="form-section-heading fade-up">
+        <span class="section-label">Ready to Lock It In?</span>
+        <h2>Detailed Booking Request</h2>
+        <p>Give us the full picture. We'll come back with availability, a custom quote, and everything you need to make it official.</p>
+      </div>
+
+      <div class="form-wrap fade-up delay-1">
+        <div class="form-wrap-title">Event Booking Request</div>
+        <div class="form-wrap-sub">We'll review your details and reach out within one business day &mdash; no pressure, no obligation.</div>
+
+        <form
+          name="booking"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="#"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="booking" />
+          <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="b_name">Full Name</label>
+              <input type="text" id="b_name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="b_phone">Phone Number</label>
+              <input type="tel" id="b_phone" name="phone" placeholder="(555) 000-0000" required />
+            </div>
+            <div class="form-group full">
+              <label for="b_email">Email Address</label>
+              <input type="email" id="b_email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group full">
+              <label for="b_type">Type of Event</label>
+              <select id="b_type" name="event_type" required>
+                <option value="" disabled selected>Select your event type</option>
+                <option>Wedding / Reception</option>
+                <option>Birthday Party</option>
+                <option>Frat / Sorority Formal</option>
+                <option>Team Banquet</option>
+                <option>Rodeo / Jackpot</option>
+                <option>Speed Dating Night</option>
+                <option>Corporate Event</option>
+                <option>Ghost Kitchen Rental</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="b_date">Preferred Date</label>
+              <input type="date" id="b_date" name="preferred_date" required />
+            </div>
+            <div class="form-group">
+              <label for="b_guests">Estimated Guest Count</label>
+              <input type="number" id="b_guests" name="headcount" placeholder="e.g. 75" min="1" required />
+            </div>
+            <div class="form-group full">
+              <label for="b_bar">Bar Services</label>
+              <select id="b_bar" name="bar_services">
+                <option value="" disabled selected>Will you need bar services?</option>
+                <option value="yes">Yes &mdash; full bar setup and staff</option>
+                <option value="no">No &mdash; venue only</option>
+                <option value="unsure">Not sure yet, let's talk</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="b_notes">Anything Else We Should Know</label>
+              <textarea id="b_notes" name="notes" placeholder="Theme, special setup requests, outside catering plans, timing needs — anything that helps us plan the right event for you."></textarea>
+            </div>
+            <div class="form-group full form-submit">
+              <button type="submit" class="btn btn-orange">Submit Booking Request &#8594;</button>
+            </div>
+          </div>
+        </form>
+          <div class="direct-contact-wrap">
+            <div class="direct-contact-label">or reach us directly</div>
+            <div class="direct-contact-btns">
+              <a href="tel:+14053346654" class="btn btn-outline-orange">Call Us</a>
+              <a href="sms:+14053346654?body=Hi%2C%20I%27m%20interested%20in%20booking%20The%20Buckin%27%20Barrel%20for%20an%20event.%20Can%20you%20help%20me%20with%20availability%3F" class="btn btn-ghost">Text Us</a>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ PRICING REMINDER ═══ -->
+  <section class="section" style="padding-top:80px; padding-bottom:80px;">
+    <div class="container" style="max-width:860px;">
+      <div class="section-heading centered fade-up">
+        <span class="section-label">Pricing at a Glance</span>
+        <h2>Simple Rates</h2>
+      </div>
+      <div class="pricing-grid fade-up delay-1">
+        <div class="pricing-block">
+          <div class="pricing-label">Venue Only</div>
+          <div class="pricing-amount"><span>$</span>180</div>
+          <div class="pricing-per">per hour</div>
+          <p>Outside food and non-alcoholic beverages always welcome.</p>
+        </div>
+        <div class="pricing-block">
+          <div class="pricing-label">With Bar &amp; Staff</div>
+          <div class="pricing-amount"><span>$</span>150</div>
+          <div class="pricing-per">per hour + bar services</div>
+          <p>Full bar setup and staff included. Best value for a full-service event.</p>
+        </div>
+      </div>
+      <p class="pricing-note fade-up delay-2">Minimum booking times may apply. Contact us directly for weekend and holiday availability.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="BuckingBarrelLogo.png" alt="The Bucking Barrel" class="footer-logo" />
+          <p>A family-owned event center and rodeo arena in the heart of central Oklahoma. Built for the community. Open for everyone.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/thebuckinbarrell" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">IG</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="space.html">The Space</a></li>
+            <li><a href="book.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <address>
+            <p>7315 W 116 St<br>Perkins, Oklahoma</p>
+            <p><a href="mailto:thebuckinbarrell@gmail.com">thebuckinbarrell@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h5>Hours</h5>
+          <p>Thursday &ndash; Sunday<br>4:00 PM &ndash; 9:00 PM</p>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-style:italic; margin-top:12px;">Opening Summer 2026</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-btm-copy">&copy; 2025 The Bucking Barrel LLC. All rights reserved.</span>
+        <span class="footer-btm-addr">7315 W 116 St, Perkins, OK &middot; <a href="mailto:thebuckinbarrell@gmail.com">thebuckinbarrell@gmail.com</a></span>
+        <span class="footer-btm-credit">Website by <a href="https://novabuildweb.com" target="_blank" rel="noopener noreferrer">NovaBuild</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ STICKY MOBILE CTA BAR ═══ -->
+  <div class="mobile-cta-bar" aria-label="Quick contact">
+    <div class="mobile-cta-bar-inner">
+      <a href="tel:+14053346654" class="mcta-btn mcta-call">Call</a>
+      <a href="sms:+14053346654?body=Hi%2C%20I%27m%20interested%20in%20booking%20The%20Buckin%27%20Barrel%20for%20an%20event.%20Can%20you%20help%20me%20with%20availability%3F" class="mcta-btn mcta-text">Text Us</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true, offset: 60 });
+  </script>
+</body>
+</html>
